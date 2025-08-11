@@ -1,0 +1,36 @@
+<!-- Problem 10 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 10 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <button id="btn"> click me </button>
+    <script>
+        // Closure for Event handlers
+        /*
+        Write a function buttonClickHandler() that creates a closure to 
+        keep track of the number of times a button has been clicked.
+        */
+        function buttonClickHandler(){
+            let clickCounters = 0;
+            function inner(){
+                let btn = document.getElementById("btn");
+                btn.onclick = function(){
+                    clickCounters++;
+                    console.log("Button clicked " + clickCounters + " times");
+                };
+            }
+            return inner;
+        }
+
+        buttonClickHandler()();
+        
+    </script>
+</body>
+
+</html>
