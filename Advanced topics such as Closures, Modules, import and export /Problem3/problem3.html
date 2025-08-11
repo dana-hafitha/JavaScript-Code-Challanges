@@ -1,0 +1,32 @@
+<!-- Problem 3 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 3 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script>
+        // Use closure to create a function that adds a number 
+        /*
+        Write a function createAdder() that takes a number as input and 
+        returns another function that adds that number to any given input.
+        */
+        function createAdder(num) {
+            function inner(num2) {
+                return num + num2;
+            }
+            return inner;
+        }
+        let adder = createAdder(5);
+        console.log(adder(10));
+        console.log(adder(7));
+
+
+    </script>
+</body>
+
+</html>
