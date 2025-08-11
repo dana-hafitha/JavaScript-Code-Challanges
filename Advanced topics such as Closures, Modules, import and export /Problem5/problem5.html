@@ -1,0 +1,33 @@
+<!-- Problem 5 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 5 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script>
+        //function with closure storing values
+        /*
+        Create a closure where the outer function keeps track of a list of values, 
+        and the inner function allows adding new values to that list. 
+        */
+        function outer(){
+            let list = [1,2,3,4,5];
+            function inner(...input){
+                list.push(...input);
+                return list;
+            }
+            return inner;
+        }
+
+        let out = outer();
+        console.log(out(7,8,10,"dana"));
+
+
+    </script>
+</body>
+</html>
