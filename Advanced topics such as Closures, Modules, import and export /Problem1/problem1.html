@@ -1,0 +1,37 @@
+<!-- problem 1 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 1 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script>
+        // Closure Example with Counter
+        /*
+        Write a function that returns another function that acts as a counter. 
+        Every time the returned function is called, it increments the counter by 1. 
+        */
+        function increaseCounterOuter() {
+            let counter = 0;
+            function increaseCounter() {
+                counter++;
+                return counter;
+            }
+            return increaseCounter;
+        }
+
+        let count = increaseCounterOuter()
+        console.log(count())
+        console.log(count())
+        console.log(count())
+        console.log(count())
+
+
+    </script>
+</body>
+
+</html>
