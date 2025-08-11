@@ -1,0 +1,30 @@
+<!-- Problem 28 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 28 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="async.js" type="module"></script>
+    <script type="module">
+        // Async Functions in Modules
+        /*
+        Create a module that includes an async function that fetches data 
+        from an API. Import this function into another file and handle the promise.
+        */
+
+        import { fetchData } from './async.js';
+
+        let result = fetchData();
+        result.then(data => {
+            console.log(data);
+        });
+
+    </script>
+</body>
+
+</html>

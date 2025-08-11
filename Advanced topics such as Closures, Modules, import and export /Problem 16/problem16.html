@@ -1,0 +1,34 @@
+<!-- Problem 16 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 16 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <button id="btn"> click me </button>
+    <script src="./helper.js" type="module"></script>
+    <script type="module">
+        //Dynamic imports in javascript
+        /*
+        Use dynamic import() to load a module only when it’s needed. 
+        Demonstrate how it works by importing a helper.js module inside 
+        an event handler.
+        */
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", () => {
+            import("./helper.js").then(({ describe }) => {
+                console.log("the button is clicked");
+                describe();
+            }
+            )
+        })
+
+
+    </script>
+</body>
+
+</html>

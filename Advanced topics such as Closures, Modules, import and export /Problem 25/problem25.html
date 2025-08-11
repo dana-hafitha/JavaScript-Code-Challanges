@@ -1,0 +1,30 @@
+<!-- Problem 25 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 25 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="module1.js" type="module"></script>
+    <script src="module2.js" type="module"></script>
+    <script type="module">
+        //Circular Dependencies in Modules
+        /*
+        Create two modules where each imports the other. Handle circular 
+        dependencies and resolve the issue without causing errors.
+        */
+
+        import { helloFromA } from './module1.js';
+        import { helloFromB } from './module2.js';
+
+        helloFromA();
+        helloFromB();
+
+    </script>
+</body>
+
+</html>

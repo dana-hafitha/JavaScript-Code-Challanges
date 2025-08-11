@@ -1,0 +1,32 @@
+<!-- print hello world on the console -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 17 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="./shapes.js" type="module"></script>
+    <script type="module">
+        //Create a Simple Calculator module
+        /*
+        Create a module shapes.js that has named exports for Circle and 
+        Square classes. Import them in another file and create instances of 
+        each.
+        */
+        import {Circle, Square} from './shapes.js';
+
+        let c1 = new Circle();
+
+        let s1 = new Square();
+
+        s1.printSize();
+        c1.printSize();
+
+    </script>
+</body>
+
+</html>

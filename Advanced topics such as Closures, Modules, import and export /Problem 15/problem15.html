@@ -1,0 +1,32 @@
+<!-- Problem 15 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 15 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="./constant.js" type="module"></script>
+    <script type="module">
+        //Create a Module with a Constant
+        /*
+        Write a module that exports a constant PI and import it in another file 
+        to calculate the circumference of a circle with a given radius.
+        */
+
+        import PI from './constant.js';
+
+        // the circumference of a circle
+        function calculateCircumference(radius) {
+            return 2 * PI * radius;
+        }
+
+        console.log(calculateCircumference(5))
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!-- Problem 21 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 21 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="./counter.js" type="module"></script>
+    <script type="module">
+        //Using Module to Encapsulate Variables
+        /*
+        Create a module that encapsulates a counter variable and exposes only 
+        a method to increment the counter. Import this module and use it to 
+        manipulate the counter.
+        */
+
+        import CreateCounter from './counter.js';
+
+        let counter = new CreateCounter();
+        counter.incrementCounter();
+        counter.incrementCounter();
+        counter.incrementCounter();
+        counter.incrementCounter();
+        counter.incrementCounter();
+        console.log(counter.getCounter());
+
+    </script>
+</body>
+
+</html>

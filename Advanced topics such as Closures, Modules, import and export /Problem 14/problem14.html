@@ -1,0 +1,31 @@
+<!-- Problem 14 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 14 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="./objectExport.js" type="module"></script>
+    <script type="module">
+        //Module with object export
+        /*
+        Create a module that exports an object representing a book, containing 
+        properties like title, author, and price. Import and display these 
+        properties in another file.
+        */
+        
+        import Book from './objectExport.js';
+
+        console.log(Book.title);
+        console.log(Book.author);
+        console.log(Book.price);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!-- Problem 22 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 22 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="./commonJS.js" type="module"></script>
+    <script src="./ES6.js" type="module"></script>
+    <script type="module">
+        //ES6 Modules vs CommonJS
+        /*
+        Write a CommonJS module and convert it to an ES6 module. Compare 
+        the differences and import both into a main JavaScript file.
+        */
+       const hello = require('./commonJS.js');
+       import es6Module from './ES6.js';
+
+       hello();
+       es6Module();
+
+    </script>
+</body>
+
+</html>

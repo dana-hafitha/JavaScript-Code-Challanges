@@ -1,0 +1,33 @@
+<!-- Problem 30 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 30 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <input type="text" id="input" placeholder="Enter name" />
+    <button id="btn">Submit</button>
+    <script src="inputs.js" type="module"></script>
+    <script type="module">
+        //Module to Handle User Input
+        /*
+        Create a module input.js that exports a function to capture user 
+        input (such as a form field). Import this module into your app and 
+        handle the input accordingly.
+        */
+        import { getValue } from './inputs.js';
+
+        let button = document.getElementById('btn');
+        button.addEventListener("click", ()=>{
+            let input = getValue('input');
+            console.log(`Hello ${input}`); 
+        })
+
+    </script>
+</body>
+
+</html>

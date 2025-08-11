@@ -1,0 +1,42 @@
+<!-- Problem 19 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 19 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="./calculator.js" type="module"></script>
+    <script src="./greet.js" type="module"></script>
+    <script src="./shapes.js" type="module"></script>
+    <script type="module">
+        //use Module with Export and import to split code
+        /*
+        Split a large program into multiple files, where each file contains 
+        different functionalities. Use export and import to tie them together.
+        */
+        import { add, subtract, multiply, divide } from './calculator.js';
+        import { Circle, Square } from './shapes.js';
+        import greet from './greet.js';
+
+        console.log(greet("Dana"));
+
+        console.log(add(5, 10))
+        console.log(subtract(10, 5))
+        console.log(multiply(5, 10))
+        console.log(divide(10, 5))
+
+        let c1 = new Circle();
+        let s1 = new Square();
+
+        s1.printSize();
+        c1.printSize();
+
+
+    </script>
+</body>
+
+</html>

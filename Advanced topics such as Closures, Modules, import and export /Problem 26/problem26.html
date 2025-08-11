@@ -1,0 +1,28 @@
+<!-- Problem 26 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 26 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="exports.js" type="module"></script>
+    <script type="module">
+        //Mixing Named and Default Exports
+        /*
+        Write a module that combines both named exports and a default export. 
+        Import both types of exports in another file. 
+        */ 
+        import { hello } from './exports.js';
+        import bye from './exports.js';
+
+        hello();
+        bye();
+
+    </script>
+</body>
+
+</html>

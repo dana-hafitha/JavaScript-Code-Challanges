@@ -1,0 +1,29 @@
+<!-- Problem 24 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 24 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <button id="btn">Click me </button>
+    <script src="./ES6.js" type="module"></script>
+    <script type="module">
+        //Module with object export 
+        /*
+        Implement lazy loading for a module in JavaScript using import() 
+        and only load the module when needed, for example, on a button click.
+        */
+       let button =  document.getElementById("btn")
+       button.addEventListener("click", async () => {
+           const hello = await import('./ES6.js');
+           hello.default();
+       });
+
+    </script>
+</body>
+
+</html>

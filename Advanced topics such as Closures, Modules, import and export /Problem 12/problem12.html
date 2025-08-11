@@ -1,0 +1,29 @@
+<!-- Problem 12 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 12 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="./utils.js" type="module"></script>
+    <script type="module">
+        // Export and Import multiple Functions
+        /*
+        Create a module utils.js that exports multiple utility functions, 
+        such as sum(), multiply(), and divide(). Import and use them 
+        in another file.
+        */
+        import { sum, multiply, divide } from './utils.js';
+
+        console.log(`the sum is: ${sum(5, 10)}`);
+        console.log(`the product is: ${multiply(5, 10)}`);
+        console.log(`the division is: ${divide(10, 5)}`);
+
+    </script>
+</body>
+
+</html>

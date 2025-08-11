@@ -1,0 +1,27 @@
+<!-- Problem 29 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 29 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="calculations.js" type="module"></script>
+    <script type="module">
+        //Named Imports with Aliases
+        /*
+        Create a module with multiple exports and import them in another file 
+        using aliases. For example, import add as sum and subtract as 
+        difference.
+        */
+        import { add as sum, subtract as difference } from './calculations.js';
+
+        console.log(sum(5, 3));
+        console.log(difference(5, 3));
+    </script>
+</body>
+
+</html>

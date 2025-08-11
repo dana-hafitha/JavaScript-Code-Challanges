@@ -1,0 +1,27 @@
+<!-- Problem 23 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 23 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="./shapes.js" type="module"></script>
+    <script type="module">
+        //Re-exporting Modules 
+        /*
+        Create a module shapes.js that imports from circle.js and 
+        square.js, then re-exports the functions from both modules.
+        */
+        import {circle , square} from './shapes.js';
+
+        console.log(circle.area(5));
+        console.log(square.area(4));
+
+    </script>
+</body>
+
+</html>

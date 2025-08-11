@@ -1,0 +1,41 @@
+<!-- Problem 27 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 27 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="configuration.js" type="module"></script>
+    <script type="module">
+        //Encapsulating Configuration in a Module
+        /*
+        Write a configuration module that exports settings like url, 
+        timeout, and retryCount. Import and use these settings in an 
+        application module.
+        */
+        import config from './configuration.js';
+
+        let myPromise = new Promise((res, rej) => {
+            fetch(config.url)
+                .then((json) => {
+                    res(json.json())
+                })
+        })
+
+        for (let i = 0; i < config.retryCount; i++) {
+            myPromise.then((result) => {
+                setTimeout(() => {
+                    console.log(result);
+                }, config.timeout);
+            })
+
+        }
+
+    </script>
+</body>
+
+</html>

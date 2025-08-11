@@ -1,0 +1,28 @@
+<!-- Problem 11 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 11 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script src="math.js" type="module"></script>
+    <script type="module">
+        // Create and import a simple module
+        
+        /*
+        Create a module math.js that exports a function to add two numbers, 
+        and import it into another file to use that function.
+        */
+
+        import { add } from './math.js';
+        console.log(`the sum is: ${add(5, 10)}`);
+
+    </script>
+    
+</body>
+
+</html>
