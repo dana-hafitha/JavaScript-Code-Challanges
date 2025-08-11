@@ -1,0 +1,36 @@
+<!-- the Second problem-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 2 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script>
+        //Simple Closure with private variable
+        /*
+        Create a closure that simulates private variables. The outer function 
+        should initialize a private variable, and the inner function should allow 
+        modifying that private variable.
+        */
+        function outer() {
+            let variable = "star";
+            function inner(newValue) {
+                variable = newValue;
+                return variable;
+            }
+            return inner;
+        }
+
+        let tryFunction = outer();
+        console.log(tryFunction("hello"))
+        console.log(tryFunction("welcome"))
+
+
+    </script>
+</body>
+
+</html>
