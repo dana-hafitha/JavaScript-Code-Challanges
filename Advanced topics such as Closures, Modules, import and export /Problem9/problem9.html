@@ -1,0 +1,39 @@
+<!-- Problem 9 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 9 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script>
+        //Closure for Counting Function Calls 
+        /*
+        Write a function callCounter() that keeps track of how many 
+        times a function has been called, using a closure.
+        */
+        
+        function callCounter() {
+            let counter = 0;
+            function increaseCounter() {
+                counter++;
+                return counter;
+            }
+            return increaseCounter;
+        }
+
+        let count = callCounter()
+        count()
+        count()
+        count()
+        console.log(count())
+
+        
+
+    </script>
+</body>
+
+</html>
