@@ -1,0 +1,38 @@
+<!-- Problem 4 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 4 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script>
+        // callback with closure
+        /*
+        Write a function delayedGreeting() that takes a message and a 
+        delay (in milliseconds), and uses a closure to display the message after 
+        the delay.
+        */
+        function delayedGreeting(message, delay, callback) {
+            function inner() {
+                setTimeout(() => {
+                callback(message);
+            }, delay);
+            }
+            return inner;
+        }
+
+        function display(message){
+            console.log(message)
+        }
+
+        let greet = delayedGreeting("hello world", 3000, display);
+        greet()
+
+    </script>
+</body>
+
+</html>
