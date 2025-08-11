@@ -1,0 +1,48 @@
+<!-- Problem 8 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 8 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script>
+        //Closure for setting multiple properties
+        /*
+        Write a function createPerson() that accepts a name and age, and 
+        returns an object with methods to get and set both name and age using 
+        closures. 
+        */
+        function createPerson(name , age){
+            let person = {
+                name: name,
+                age: age
+            };
+            function inner(){
+                person.getName = function(){
+                    return person.name;
+                };
+                person.getAge = function(){
+                    return person.age;
+                };
+                person.setName = function(){
+                    person.name = name;
+                };
+                person.setAge = function(){
+                    person.age = age;
+                };
+                return person;
+            }
+            return inner;
+        }
+
+        let person = createPerson("dana" , 22);
+        console.log(person())
+        
+    </script>
+</body>
+
+</html>
