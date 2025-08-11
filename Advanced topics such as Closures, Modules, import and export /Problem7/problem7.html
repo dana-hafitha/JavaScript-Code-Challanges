@@ -1,0 +1,38 @@
+<!-- Problem 7 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Problem 7 </title>
+</head>
+
+<!-- here is the body -->
+
+<body>
+    <script>
+        //create a closure for user authentication 
+        /*
+        Write a function authenticate() that uses a closure to store the 
+        password. It should return another function that checks if the input 
+        password matches the stored password.
+        */
+
+        function authenticate(){
+            let password = 1211234;
+            function inner(pass){
+                if(password === pass){
+                    return true;
+                }
+                return false;
+            }
+            return inner;
+        }
+
+        let out = authenticate();
+        console.log(out(1212234));
+
+
+    </script>
+</body>
+
+</html>
