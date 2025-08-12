@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 19</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 19</h1>
+    <script>
+        //Check Armstrong Number     
+        /*
+        Write a function that checks if a number is an Armstrong number.
+        */
+        function isArmstrong(number){
+            let digits = number.toString().split('');
+            let len = digits.length;
+            let sum = 0;
+
+            for (let i = 0; i < len; i++){
+                sum += (parseInt(digits[i]) ** len);
+            }
+            
+            if (sum === number){
+                return true;
+            }
+            return false;
+        }
+
+        
+        function printArmstrongs(start, end) {
+            if (typeof start !== "number" || typeof end !== "number") {
+                return "Invalid Input";
+            }
+
+            for (let num = start ; num <= end; num++) {
+                if (isArmstrong(num)) {
+                    console.log(num);
+                }
+            }
+        }
+
+        printArmstrongs(1, 10000);
+
+    </script>
+</body>
+
+</html>

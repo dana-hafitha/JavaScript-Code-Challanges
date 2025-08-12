@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 20</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 20</h1>
+    <script>
+        //Create a Simple Calculator     
+        /*
+        Write a simple calculator program that can perform addition, 
+        subtraction, multiplication, and division.
+        */
+
+        function calculate(operation , ...numbers){
+            switch (operation) {
+                case "+":
+                    let sum = 0;
+                    for (let i = 0; i < numbers.length; i++) {
+                        sum += numbers[i];
+                    }
+                    console.log(`the result of add is: ${sum}`);
+                    break;
+                
+                case "-":
+                    let sub = numbers[0];
+                    for (let i = 1; i < numbers.length; i++) {
+                        sub -= numbers[i];
+                    }
+                    console.log(`the result of subtract is: ${sub}`);
+                    break;
+
+                case "*":
+                    let mul = numbers[0];
+                    for (let i = 1; i < numbers.length; i++) {
+                        mul = mul * numbers[i];
+                    }
+                    console.log(`the result of multiplication is: ${mul}`);
+                    break;
+
+                case "/":
+                    let div = numbers[0];
+                    for (let i = 0; i < numbers.length; i++) {
+                        if (numbers[i] === 0){
+                            div = "invalid result 'can't divide on zero'"
+                            break;
+                        }
+                        div /= numbers[i];
+                    }
+                    console.log(`the result of division is: ${div}`);
+                    break;
+                
+                default:
+                    console.log("invalid operation");
+                    break;
+            }
+        }
+        
+        calculate("+" , 1,2,3,0);
+        calculate("-" , 1,2,3,0);
+        calculate("*" , 1,2,3,6);
+        calculate("*" , 1,2,3,0);
+        calculate("/" , 1,2,3,0);
+        calculate("/" , 1,2,3);
+        calculate("%" , 1,2);
+
+
+    </script>
+</body>
+
+</html>

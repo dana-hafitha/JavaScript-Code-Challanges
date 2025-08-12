@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 13</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 13</h1>
+    <script>
+        //Check If a Number is Prime    
+        /*
+        Write a function that checks whether a number is prime.  
+        */
+        function isPrime(num) {
+            if (typeof num !== "number") {
+                return "Invalid Input";
+            }
+
+            if (num >= 2) {
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
+        console.log(isPrime("dana"));
+        console.log(isPrime(5));
+        console.log(isPrime(10));
+        console.log(isPrime(97));
+        console.log(isPrime(9));
+
+    </script>
+</body>
+
+</html>

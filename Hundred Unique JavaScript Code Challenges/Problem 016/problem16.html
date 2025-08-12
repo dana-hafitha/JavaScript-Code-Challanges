@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 16</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 16</h1>
+    <script>
+        //Display the Multiplication Table     
+        /*
+        Write a JavaScript code that displays the multiplication table for a given number.
+        */
+        function printMulTable(num) {
+            if (typeof num !== "number") {
+                console.log("Invalid Input");
+            }
+            else {
+                for (let i = 1; i <= 12; i++) {
+                    console.log(`${num} x ${i} = ${num * i}`);
+                }
+            }
+        }
+
+        printMulTable("dana")
+        console.log("##################")
+        printMulTable(0)
+        console.log("##################")
+        printMulTable(1)
+        console.log("##################")
+        printMulTable(5)
+
+    </script>
+</body>
+
+</html>

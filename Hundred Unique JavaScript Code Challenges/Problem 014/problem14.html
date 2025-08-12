@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 14</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 14</h1>
+    <script>
+        //Print All Prime Numbers in an Interval     
+        /*
+        Write a function that prints all prime numbers between two given numbers.
+        */
+        function printPrimes(start, end) {
+            if (typeof start !== "number" || typeof end !== "number") {
+                return "Invalid Input";
+            }
+
+            for (let num = start ; num <= end; num++) {
+                let isPrime = true;
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime && num > 1) {
+                    console.log(num);
+                }
+            }
+        }
+
+        printPrimes(0, 10);
+
+    </script>
+</body>
+
+</html>

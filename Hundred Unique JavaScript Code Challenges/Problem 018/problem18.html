@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 19</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 19</h1>
+    <script>
+        //Find Armstrong Number in an Interval      
+        /*
+        Write a program to find all Armstrong numbers in a given range.
+        */
+        function isArmstrong(number){
+            let digits = number.toString().split('');
+            let len = digits.length;
+            let sum = 0;
+
+            for (let i = 0; i < len; i++){
+                sum += (parseInt(digits[i]) ** len);
+            }
+            
+            if (sum === number){
+                return true;
+            }
+            return false;
+        }
+
+
+        console.log(isArmstrong(153))
+        console.log(isArmstrong(9474));
+        console.log(isArmstrong(520));
+
+    </script>
+</body>
+
+</html>

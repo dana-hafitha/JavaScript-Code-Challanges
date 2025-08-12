@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 12</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 12</h1>
+    <script>
+        //Find the Largest Among Three Numbers    
+        /*
+        Write a JavaScript function that finds the largest number among three numbers. 
+        */
+        function findLargestNumber(num1, num2, num3) {
+            if (typeof num1 !== "number" || typeof num2 !== "number" || typeof num3 !== "number") {
+                return "Invalid input";
+            }
+            return Math.max(num1, num2, num3);
+
+        }
+
+        console.log(findLargestNumber("dana", 5, 10));
+        console.log(findLargestNumber(5, 10, 15));
+        console.log(findLargestNumber(-3, -5, -1));
+        console.log(findLargestNumber(0, 0, 0));
+
+    </script>
+</body>
+
+</html>
