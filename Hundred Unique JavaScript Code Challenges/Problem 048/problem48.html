@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 48</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 48</h1>
+    <script>
+        //Add Key/Value Pair to an Object            
+        /*
+        Write a function to add a key-value pair to an object. 
+        */
+
+        let object = {
+            name: "Dana",
+            age: 22,
+            gender: "Female",
+            city: "Ramallah"
+        };
+
+
+       function addPair(obj ,key ,value) {
+           obj[key] = value;
+       }
+
+       addPair(object, "country", "Palestine");
+       console.log(object);
+
+    </script>
+</body>
+
+</html>

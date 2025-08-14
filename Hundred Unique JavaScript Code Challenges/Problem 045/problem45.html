@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 45</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 45</h1>
+    <script>
+        // Loop Through an Object           
+        /*
+        Write a JavaScript code to loop through the properties of an object and print them.  
+        */
+
+        let object = {
+            name: "Dana",
+            age: 22,
+            gender: "Female"
+        };
+
+       function loopObject(obj) {
+           let keys = Object.keys(obj);
+           keys.forEach(key => {
+               console.log(key + ": " + obj[key]);
+           });
+       }
+
+       loopObject(object);
+
+    </script>
+</body>
+
+</html>

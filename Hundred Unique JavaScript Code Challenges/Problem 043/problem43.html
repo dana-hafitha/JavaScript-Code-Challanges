@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 43</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 43</h1>
+    <script>
+        //Check If a Key Exists in an Object          
+        /*
+        Create a function that checks if a key exists in an object. 
+        */
+
+        function checkKey(obj , mykey){
+            let keys = Object.keys(obj)
+            for (let i = 0; i < keys.length; i++) {
+                if (keys[i] === mykey) {
+                    return true;
+                }
+            }
+            return false
+        }
+
+        let obj = {
+            name: "dana",
+            age: 22
+        }
+
+        console.log(checkKey(obj , 'name'));
+
+    </script>
+</body>
+
+</html>

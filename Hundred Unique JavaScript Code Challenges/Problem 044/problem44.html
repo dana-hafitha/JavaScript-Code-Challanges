@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 44</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 44</h1>
+    <script>
+        // Clone a JavaScript Object           
+        /*
+        Write a function that clones an object using various methods.  
+        */
+
+        let obj = {
+            name: "Dana",
+            age: 22,
+            gender: "Female"
+        };
+
+        function cloneObject(obj) {
+            
+            let clone1 = {...obj};
+            let clone2 = Object.assign({}, obj);
+            let clone3 = JSON.parse(JSON.stringify(obj));
+
+            console.log(clone1);
+            console.log(clone2);
+            console.log(clone3);
+        }
+
+        cloneObject(obj);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 42</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 42</h1>
+    <script>
+        //Check Whether a String Starts and Ends with Certain Characters         
+        /*
+        Write a function that checks if a string starts and ends with the specified characters. 
+        */
+
+        function checkStartAndEnd(str ,char){
+            let last = str[(str.length - 1)];
+            let first = str[0];
+            if (last === char){
+                if (first === char){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        console.log(checkStartAndEnd("dana" , "d"));
+        console.log(checkStartAndEnd("dad" , "d"));
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 49</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 49</h1>
+    <script>
+        //Replace All Occurrences of a String             
+        /*
+        Write a JavaScript code to replace all occurrences of a string in another string. 
+        */
+
+        let str = "Hello World";
+        let target = "World";
+        let replacement = "Universe";
+
+        function replaceStr(str, target, replacement) {
+            let words = str.split(" ");
+            words.forEach((word, index) => {
+                if (word === target) {
+                    console.log(index);
+                    words[index] = replacement;
+                }
+            });
+            let newStr = words.join(" ");
+            return newStr;
+        }
+
+        console.log(replaceStr(str, target, replacement));
+
+    </script>
+</body>
+
+</html>
