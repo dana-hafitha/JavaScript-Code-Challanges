@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 94</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 94</h1>
+    <script type="module">
+        // Generate a Range of Numbers and Characters               
+        /*
+        Write a JavaScript code that generates a range of numbers and characters within a specified range.    
+        */
+
+        function generateNumbersAndCharacters(startNum, endNum, startChar, endChar) {
+            let numbers = [];
+            for (let i = startNum; i <= endNum; i++){
+                numbers.push(i);
+            }
+
+            let chars = [];
+            for (let i = startChar.charCodeAt(0); i <= endChar.charCodeAt(0); i++){
+                chars.push(String.fromCharCode(i));
+            }
+
+            let comb = numbers.concat(chars)
+
+            console.log(comb);
+        }
+        
+        generateNumbersAndCharacters(1,8,'A','D')
+
+
+    </script>
+</body>
+
+</html>

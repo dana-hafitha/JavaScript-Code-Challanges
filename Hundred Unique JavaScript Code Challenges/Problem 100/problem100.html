@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 100</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 100</h1>
+    <img id="img" src="https://placehold.co/400X200" alt="Sample Image">
+    <script>
+        //Get the Dimensions of an Image                
+        /*
+        Write a JavaScript code that gets the dimensions (width and height) of an image element on a webpage.    
+        */
+        let img = document.getElementById("img");
+        img.onload = () => {
+            console.log(img.width);
+            console.log(img.height);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 90</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 90</h1>
+    <script type="module">
+        //Validate an Email Address                
+        /*
+        Write a function that validates if a given email address is valid or not.  
+        */
+       function validateEmail(email) {
+           const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+           if (regex.test(email)) {
+               return `the Email is Valid `;
+           }
+            return `the Email is Invalid`;
+       }
+
+       console.log(validateEmail("email@gmail.com")); // true
+       console.log(validateEmail("email@@@gmail.com")); // false
+       console.log(validateEmail("invalid-email")); // false
+
+    </script>
+</body>
+</html>

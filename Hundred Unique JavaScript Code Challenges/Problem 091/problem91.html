@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 91</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 91</h1>
+    <script type="module">
+        //Check if a Variable is a Function                
+        /*
+        Write a JavaScript code that checks if a variable is of function type.  
+        */
+       function isFunction(variable) {
+           return typeof variable === "function";
+       }
+
+       console.log(isFunction(() => {
+        console.log("Hello");
+       })); 
+       console.log(isFunction(123));
+       console.log(isFunction("Hello"));
+       console.log(isFunction({name: "dana" , age: 22}));
+       
+    </script>
+</body>
+</html>

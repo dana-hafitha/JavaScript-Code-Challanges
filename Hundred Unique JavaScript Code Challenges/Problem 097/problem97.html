@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 97</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 97</h1>
+    <script type="module">
+        //Implement a Queue               
+        /*
+        Write a JavaScript program to implement a queue with enqueue, dequeue, and peek operations.    
+        */
+
+        class Queue {
+            constructor() {
+                this.items = [];
+            }
+
+            enqueue(element) {
+                return this.items.push(element);
+            }
+
+            dequeue() {
+                if (this.items.length === 0) {
+                    return "Queue is empty";
+                }
+                return this.items.shift();
+            }
+
+            peek() {
+                if (this.items.length === 0) {
+                    return "Stack is empty";
+                }
+                return this.items[0];
+            }
+
+            print() {
+                console.log(this.items.join(" -> "));
+            }
+        }
+
+        let queue = new Queue();
+        queue.enqueue(10);
+        console.log(queue.peek());
+
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.enqueue(50);
+        queue.enqueue(60);
+
+        queue.print();
+
+        queue.dequeue();
+        queue.dequeue();
+
+        queue.print();
+
+
+    </script>
+</body>
+
+</html>

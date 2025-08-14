@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 98</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 98</h1>
+    <script type="module">
+        //Check if a Number is Float or Integer                
+        /*
+        Write a program that checks if a number is an integer or a float.    
+        */
+
+        function numberOrFloat(num){
+            let str = num.toString();
+            if (str.includes('.')){
+                console.log("the number is float");
+            }
+            else{
+                console.log("the number is a natural number");
+            }
+        }
+
+        numberOrFloat(111);
+        numberOrFloat(111.111);
+
+
+    </script>
+</body>
+
+</html>

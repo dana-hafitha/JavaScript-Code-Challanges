@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 95</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 95</h1>
+    <script type="module">
+        // Perform Function Overloading               
+        /*
+        Write a function that handles different numbers of arguments and 
+        returns the result accordingly (overloading).    
+        */
+        function printGreeting() {
+            if (arguments.length === 0){
+                console.log("you have not entered any arguments");
+            }
+            else{
+                for (let i = 0 ; i < arguments.length; i++){
+                    console.log(`Greeting User: ${arguments[i]}`);
+                }
+            }
+        }
+
+        printGreeting();
+        console.log("#####################");
+        printGreeting("Dana");
+        console.log("#####################");
+        printGreeting("Dana", "Tala");
+
+
+
+    </script>
+</body>
+
+</html>

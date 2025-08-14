@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 84</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 84</h1>
+    <script type="module">
+        //Get File Extension               
+        /*
+        Write a function that returns the file extension of a given file name. 
+        */
+        let fileName = "P84.pdf";
+        let fileName1 = "P84.js";
+
+        function getFileExtension(file) {
+            let ext = file.split('.');
+            return ext[ext.length - 1];
+        }
+
+        console.log(getFileExtension(fileName));
+        console.log(getFileExtension(fileName1));
+
+
+    </script>
+</body>
+
+</html>

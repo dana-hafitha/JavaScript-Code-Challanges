@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 85</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 85</h1>
+    <script type="module">
+        //Check if a Variable is Undefined or Null                
+        /*
+        Write a program that checks if a variable is either undefined or null. 
+        */
+        let Name;
+        let Age = null;
+        let myName = "Dana";
+
+        function checkUndefinedOrNull(variable){
+            if(variable === undefined){
+                return `Variable is undefined`;
+            } else if(variable === null){
+                return `Variable is null`;
+            }
+            return `Variable is neither undefined nor null and the value is ${variable}`;
+        }
+
+        console.log(checkUndefinedOrNull(Name));
+        console.log(checkUndefinedOrNull(Age));
+        console.log(checkUndefinedOrNull(myName));
+
+
+    </script>
+</body>
+
+</html>
