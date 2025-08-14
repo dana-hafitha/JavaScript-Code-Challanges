@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 37</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 37</h1>
+    <script>
+        //Create Objects in Different Ways        
+        /*
+        Write code to create an object in different ways using object literals, constructors, and Object.create() 
+        */
+
+        // literal
+        let product = {
+            name: "Laptop",
+            price: 3200,
+            brand: "Asus"
+        }
+        console.log(product);
+
+        // constructor
+        function Car(name, price, brand) {
+            this.name = name;
+            this.price = price;
+            this.brand = brand;
+        }
+
+        let car = new Car("Model S", 79999, "Tesla");
+        console.log(car);
+
+        // Object.create()
+        let person = Object.create({});
+        person.name = "Dana";
+        person.age = 22;
+
+        console.log(person);
+        
+    </script>
+</body>
+
+</html>

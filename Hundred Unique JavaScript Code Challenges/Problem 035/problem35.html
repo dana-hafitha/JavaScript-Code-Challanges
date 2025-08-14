@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 35</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 35</h1>
+    <script>
+        //Replace Characters in a String       
+        /*
+        Write a JavaScript function that replaces all occurrences of a character in a string.  
+        */
+
+        function replaceCharacters(str ,traget ,replacement){
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] === traget) {
+                    str = str.substring(0, i) + replacement + str.substring(i + 1);
+                }
+            }  
+            return str;
+        }
+
+        console.log(replaceCharacters("banana", "a", "o"));
+        console.log(replaceCharacters("hello world", "o", "0"));
+        console.log(replaceCharacters("javascript", "a", "@"));
+
+    </script>
+</body>
+
+</html>

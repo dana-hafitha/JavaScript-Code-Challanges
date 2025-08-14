@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 38</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 38</h1>
+    <script>
+        //Count the Occurrences of a Character in a String        
+        /*
+        Write a JavaScript code to count the number of occurrences of a character in a string. 
+        */
+
+        function countOccurances(str ,char) {
+            let count = 0;
+            for (let i = 0; i < str.length; i++){
+                if (str[i] === char) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log(countOccurances("banana", "a"));
+        console.log(countOccurances("banana", "o")); 
+
+
+    </script>
+</body>
+
+</html>

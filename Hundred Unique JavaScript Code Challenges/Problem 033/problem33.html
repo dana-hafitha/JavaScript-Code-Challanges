@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 33</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 33</h1>
+    <script>
+        //Check Whether a String is Palindrome        
+        /*
+        Write a function that checks if a string is a palindrome.  
+        */
+
+        function isPalindrome(str) {
+            let left = 0;
+            let right = str.length - 1;
+
+            while (left < right) {
+                if (str[left] !== str[right]) {
+                    return `the string ${str} is not a palindrome`;
+                }
+                left++;
+                right--;
+            }
+            return `the string ${str} is a palindrome`;
+        }
+
+        console.log(isPalindrome("abba"));
+        console.log(isPalindrome("madam"));
+        console.log(isPalindrome("hello"));
+
+    </script>
+</body>
+
+</html>

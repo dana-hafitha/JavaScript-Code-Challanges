@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 40</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 40</h1>
+    <script>
+        //Count the Number of Vowels in a String        
+        /*
+        Create a function to count the number of vowels in a given string.
+        */
+
+        function countVowels(str) {
+            const vowels = "aeiouAEIOU";
+            let count = 0;
+            for (let i = 0; i < str.length; i++) {
+                if (vowels.includes(str[i])) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        console.log(countVowels("hello")); //2
+        console.log(countVowels("world")); //1
+        console.log(countVowels("dana")); //2
+
+
+    </script>
+</body>
+
+</html>

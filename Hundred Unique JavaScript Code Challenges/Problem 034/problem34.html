@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 34</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 34</h1>
+    <script>
+        //Sort Words in Alphabetical Order       
+        /*
+        Create a JavaScript function that sorts the words in a given string in alphabetical order.  
+        */
+
+        function sortWords(str) {
+            let words = str.split(" ");
+            words.sort();
+            return words.join(" ");
+        }
+
+        console.log(sortWords("banana apple cherry"));
+        console.log(sortWords("the quick brown fox"));
+        console.log(sortWords("javascript is awesome"));
+
+    </script>
+</body>
+
+</html>

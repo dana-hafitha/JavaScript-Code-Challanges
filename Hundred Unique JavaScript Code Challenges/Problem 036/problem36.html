@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 36</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 36</h1>
+    <script>
+        //Reverse a String        
+        /*
+        Write a program that reverses a string without using the built-in reverse method. 
+        */
+
+        function reverse(str){
+            let reversed = ""
+            for (let i = (str.length - 1); i >= 0; i--) {
+                reversed += str[i];
+            }
+            return reversed;
+        }
+
+        console.log(reverse("banana"));
+        console.log(reverse("hello world"));
+        console.log(reverse("javascript"));
+
+    </script>
+</body>
+
+</html>
