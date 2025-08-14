@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 29</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 29</h1>
+    <script>
+        //Display Fibonacci Sequence Using Recursion          
+        /*
+        Create a recursive function that generates the Fibonacci sequence.
+        */
+
+        let fibonacciSequence = [];
+
+        function fibonacci(n) {
+            if (n <= 1) {
+                return n;
+            }
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+
+        for (let i = 0; i < 10; i++) {
+            fibonacciSequence.push(fibonacci(i));
+        }
+
+        console.log(fibonacciSequence);
+
+    </script>
+</body>
+
+</html>

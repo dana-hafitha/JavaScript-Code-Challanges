@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 25</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 25</h1>
+    <script>
+        //Find the Factors of a Number       
+        /*
+        Write a function that finds all the factors of a number. 
+        */
+
+        function getFactors(number){
+            let divideBy = 1;
+            let factors = [];
+            while (divideBy <= number){
+                if (number % divideBy === 0){
+                    factors.push((number / divideBy))
+                }
+                divideBy++;
+            }
+            return factors;
+        }
+
+        console.log(getFactors(8))
+        console.log(getFactors(6))
+        console.log(getFactors(14))
+
+
+
+    </script>
+</body>
+
+</html>

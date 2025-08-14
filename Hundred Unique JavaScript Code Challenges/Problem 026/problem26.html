@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 26</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 26</h1>
+    <script>
+        //Find Sum of Natural Numbers Using Recursion       
+        /*
+        Write a recursive function to calculate the sum of natural numbers up to n.  
+        */
+
+        function findSumUpTo(n){
+            if (n === 0){
+                return 0;
+            }
+            return n + findSumUpTo(n-1)
+        }
+
+        console.log(findSumUpTo(5)) // 5 + 4 + 3 + 2 + 1 = 15
+        console.log(findSumUpTo(6)) // 21
+
+
+
+    </script>
+</body>
+
+</html>

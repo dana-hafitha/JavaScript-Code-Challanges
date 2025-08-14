@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 27</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 27</h1>
+    <input  id="userInput" placeholder="Enter a number between 1 & 100" style="padding: 5px; width: 200px;"> 
+    <br>
+    <br> 
+    <button id="btn">Guess</button>
+    <script>
+        //Guess a Random Number        
+        /*
+        Create a number guessing game where the user guesses a randomly generated number between 1 and 100.
+        */
+
+        let number = Math.floor(Math.random() * 100) + 1;
+        let counter = 0; // to count how many times till the user have guessed the number
+
+        function guessNumber(number){
+            let input = document.getElementById("userInput");
+            let guess = parseInt(input.value);
+            counter++;
+            if (guess < 1 || guess > 100 || isNaN(guess)) {
+                console.log(`${guess} is not a valid number. Please enter a valid number between 1 and 100.`);
+                input.value = "";
+            } else if (guess === number) {
+                console.log(`Congratulations! You guessed the number in ${counter} tries and it is ${number}.`);
+                input.value = "";
+            } else if (guess < number) {
+                console.log(`${guess} is too low! Try again.`);
+                input.value = "";
+            } else {
+                console.log(`${guess} is too high! Try again.`);
+                input.value = "";
+            }
+        }
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function() {
+            guessNumber(number);
+        });
+
+
+    </script>
+</body>
+
+</html>
