@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 23</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 23</h1>
+    <script>
+        //Find HCF (Greatest Common Divisor)       
+        /*
+        Write a function that finds the HCF or GCD of two numbers. 
+        Using Euclidian Algorithm
+        */
+
+        function getGCD(num1, num2){
+            while (num1 !== 0){
+                mod = num2 % num1; 
+                num2 = num1;
+                num1 = mod;
+            }
+            return num2;
+        }
+        
+        console.log(getGCD(1701, 3768)); 
+        
+
+    </script>
+</body>
+
+</html>

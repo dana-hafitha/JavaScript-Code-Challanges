@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 24</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 24</h1>
+    <script>
+        //Find LCM (Least Common Multiple)       
+        /*
+        Create a JavaScript function that finds the LCM of two numbers.
+        Using HCM and LCM Theorem 
+        num1 * num2 = HCM(num1,num2) * LCM(num1,num2)
+        */
+        
+        function getGCD(num1, num2){
+            while (num1 !== 0){
+                mod = num2 % num1; 
+                num2 = num1;
+                num1 = mod;
+            }
+            return num2;
+        }
+
+        function getLCM(num1, num2) {
+            let multiplyResult = num1 * num2;
+            let gcd = getGCD(num1,num2);
+
+            return multiplyResult / gcd;
+        }
+
+        console.log(getLCM(3, 6));
+        console.log(getLCM(4, 10));
+        console.log(getLCM(12, 4));
+        console.log(getLCM(9, 6));
+
+
+    </script>
+</body>
+
+</html>
