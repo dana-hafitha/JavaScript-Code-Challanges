@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 52</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 52</h1>
+    <script>
+        //Generate a Random String            
+        /*
+        Write a function that generates a random alphanumeric string of a given length.   
+        */
+        function generateString(length) {
+            let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let len = chars.length;
+
+            let output = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * len);
+                output += chars.charAt(randomIndex);
+            }
+            return output;
+        }
+
+        console.log(generateString(10));
+        console.log(generateString(15));
+    </script>
+</body>
+
+</html>

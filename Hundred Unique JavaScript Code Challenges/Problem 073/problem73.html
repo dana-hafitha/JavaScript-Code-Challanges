@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 73</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 73</h1>
+    <script>
+        //Add Element to Start of an Array                 
+        /*
+        Write a JavaScript code that adds an element to the start of an array.      
+        */
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        function addElement(array, element) {
+            array.unshift(element);
+        }
+
+        console.log(arr);
+        addElement(arr, 0);
+        console.log(arr); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+       
+
+    </script>
+</body>
+
+</html>

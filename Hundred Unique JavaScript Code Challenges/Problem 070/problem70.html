@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 70</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 70</h1>
+    <script>
+        //Append an Object to an Array                 
+        /*
+        Write a function that appends an object to the end of an array.     
+        */
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let object = {
+            name: "dana",
+            age: 22
+        }
+
+        function appendObject(nArr, object) {
+            nArr.push(object);
+            return nArr;
+        }
+
+        console.log(appendObject(arr, object));
+
+    </script>
+</body>
+
+</html>

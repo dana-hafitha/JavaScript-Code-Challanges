@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 79</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 79</h1>
+    <script>
+        //Compare Elements of Two Arrays                
+        /*
+        Write a function that compares two arrays and returns whether they are equal or not.    
+        */
+        function areEqual(arr1, arr2) {
+            if (arr1.length !== arr2.length) {
+                return `Arrays are not equal`;
+            }
+
+            for (let i = 0; i < arr1.length; i++) {
+                if (arr1[i] !== arr2[i]) {
+                    return `Arrays are not equal`;
+                }
+            }
+            return `Arrays are equal`;
+        }
+
+        let arr1 = [1,2,3,4,5,6];
+        let arr2 = [1,2,3,4,5,6];
+        let arr3 = [1,2,7,4,5,6];
+
+        console.log(areEqual(arr1, arr2));
+        console.log(areEqual(arr1, arr3));
+        console.log(areEqual(arr2, arr3));
+
+    </script>
+</body>
+
+</html>

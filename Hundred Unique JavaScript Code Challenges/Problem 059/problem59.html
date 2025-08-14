@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 59</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 59</h1>
+    <script>
+        //Replace All Instances of a Character in a String             
+        /*
+        Write a program that replaces all instances of a character in a string.   
+        */
+        function replaceAllChars(str, target, replacement) {
+            let newStr = "";
+            for (let i = 0; i < str.length; i++) {
+                if (str[i] === target) {
+                    newStr += replacement;
+                } else {
+                    newStr += str[i];
+                }
+            }
+            return newStr;
+        }
+
+        console.log(replaceAllChars("Hello, world!", "o", "0"));
+
+    </script>
+</body>
+
+</html>

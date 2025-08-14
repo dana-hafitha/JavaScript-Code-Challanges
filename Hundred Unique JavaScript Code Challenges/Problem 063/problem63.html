@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 63</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 63</h1>
+    <script>
+        //Format the Date                
+        /*
+        Write a program that formats a given date in the format "MM/DD/YYYY".    
+        */
+        function formatDate(date) {
+
+            let month = date.getMonth() + 1;
+            if (month < 10) {
+                month = '0' + month;
+            }
+
+            let day = date.getDate();
+            if (day < 10) {
+                day = '0' + day;
+            }
+
+            let year = date.getFullYear();
+            if (year < 10) {
+                year = '0' + year;
+            }
+
+            return `${month}/${day}/${year}`;
+        }
+
+        console.log(formatDate(new Date("December 17, 1995 03:24:00")));
+
+    </script>
+</body>
+
+</html>

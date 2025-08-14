@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 78</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 78</h1>
+    <script>
+        //Extract Given Property Values from Objects as Array                
+        /*
+        Write a function that extracts a given property value from all objects in an array and returns them in a new array.    
+        */
+        function extractPropValues(array, prop) {
+            return array.map(obj => obj[prop]);
+        }
+
+        let data = [
+            { id: 1, 
+              name: "Dana" 
+            },
+            { id: 2, 
+              name: "Tala"
+            },
+            { id: 3, 
+              name: "Amr"
+            }
+        ];
+
+        let names = extractPropValues(data, "name");
+        console.log(names);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 77</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 77</h1>
+    <script>
+        // Create Two Dimensional Array                   
+        /*
+        Write a JavaScript code that creates a two-dimensional array (a matrix).    
+        */
+        function create2DArray(rows, cols, ...elements){
+            let arr = [];
+            let elementsCounter = 0;
+            for (let i = 0; i < rows; i++) {
+                arr[i] = [];
+                for (let j = 0; j < cols; j++) {
+                    arr[i][j] = elements[elementsCounter] || 0;
+                    elementsCounter++;
+                }
+            }
+            return arr;
+        }
+
+        let arr = create2DArray(3, 3, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+        console.log(arr);
+
+    </script>
+</body>
+
+</html>

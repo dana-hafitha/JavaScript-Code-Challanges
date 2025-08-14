@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 76</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 76</h1>
+    <script>
+        // Sort Array of Objects by Property Values                   
+        /*
+        Write a program that sorts an array of objects by a specific property value.    
+        */
+        let arr = [
+            { id: 3, name: "Dana" },
+            { id: 1, name: "Tala" },
+            { id: 2, name: "Amr" }
+        ];
+
+        function sortByProp(array, property) {
+            let newArray = array.slice();
+            return newArray.sort((a, b) => {
+                if (a[property] > b[property]) {
+                    return 1;
+                } else if (a[property] < b[property]) {
+                    return -1;
+                } else {
+                    return 0;
+                }
+            });
+        }
+
+        console.log("Sorted by ID:", sortByProp(arr, "id"));
+        console.log("Sorted by Name:", sortByProp(arr, "name"));
+
+    </script>
+</body>
+
+</html>

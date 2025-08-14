@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 69</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 69</h1>
+    <script>
+        //Insert Item in an Array                 
+        /*
+        Write a program that inserts an item at a specific position in an array.     
+        */
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function insertAtIndex(nArr, element, index) {
+            nArr.splice(index, 0, element);
+            return nArr;
+        }
+
+        console.log(insertAtIndex(arr, 14, 2));
+        console.log(insertAtIndex(arr, 21, 5));
+
+    </script>
+</body>
+
+</html>

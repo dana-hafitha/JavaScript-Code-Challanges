@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 66</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 66</h1>
+    <script>
+        //Create a Countdown Timer                 
+        /*
+        Write a JavaScript program to create a countdown timer that displays the remaining time.    
+        */
+        let desiredDate = new Date("Aug 14, 2025 19:20:00").getTime();
+
+        // Update the count down every 1 second
+        let interval = setInterval(() => {
+
+            // Get today's date and time
+            let now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            let distance = desiredDate - now;
+
+
+            // Time calculations for days, hours, minutes and seconds
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+
+            if (distance < 0) {
+                clearInterval(interval);
+                console.log("EXPIRED");
+            }
+        
+        }, 1000);
+
+    </script>
+</body>
+
+</html>

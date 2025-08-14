@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 51</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 51</h1>
+    <script>
+        //Format Numbers as Currency Strings            
+        /*
+        Write a function that formats a number into a currency string.   
+        */
+        function formatCurrency(amount, country, currency) {
+            return new Intl.NumberFormat(country, { style: 'currency', currency: currency }).format(amount);
+        }
+
+        console.log(formatCurrency(1234.56, 'en-US', 'USD'));
+        console.log(formatCurrency(1234.56, 'de-DE', 'EUR'));
+    </script>
+</body>
+
+</html>

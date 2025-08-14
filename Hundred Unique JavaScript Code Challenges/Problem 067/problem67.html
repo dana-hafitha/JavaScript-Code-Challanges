@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 67</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 67</h1>
+    <script>
+        //Remove Specific Item from an Array                
+        /*
+        Write a function that removes a specific item from an array.    
+        */
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function removeElement(arr ,element){
+            arr.splice(arr.indexOf(element), 1);
+            return arr;
+        }
+
+        console.log(removeElement(arr, 5));
+
+    </script>
+</body>
+
+</html>

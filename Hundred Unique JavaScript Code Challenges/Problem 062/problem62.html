@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 62</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 62</h1>
+    <script>
+        //Check Leap Year               
+        /*
+        Write a function that checks whether a given year is a leap year or not.    
+        */
+        function isLeapYear(year) {
+            if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0 && year % 100 === 0)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        console.log(isLeapYear(2020));  // true
+        console.log(isLeapYear(2021));  // false
+        console.log(isLeapYear(1900));  // false
+        console.log(isLeapYear(1972));  // true
+        console.log(isLeapYear(2000));  // true
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Challenge 55</title>
+</head>
+
+<body>
+    <h1>JavaScript Code Challenge 55</h1>
+    <script>
+        // Convert Objects to Strings             
+        /*
+        Write a function to convert an object into a JSON string.   
+        */
+        function objectToJson(obj) {
+            return JSON.stringify(obj);
+        }
+
+        console.log(objectToJson({ name: "dana", age: 22 })); // '{"name":"dana","age":22}'
+        console.log(objectToJson({ city: "Ramallah", country: "Palestine" })); // '{"city":"Ramallah","country":"Palestine"}'
+
+    </script>
+</body>
+
+</html>
